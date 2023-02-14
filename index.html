@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <title>PenPal: Your Text Editing Partner</title>
+  </head>
+  <body class="bg-indigo-400">
+    <header class="flex justify-center flex-col container mx-auto my-1">
+      <h1 class="text-4xl text-center uppercase text-white shadow-lg shadow-black/10 p-10">
+        <span class="text-indigo-600 bg-white p-3 rounded-lg shadow-2xl shadow-black/20">PenPal</span> Your Text Editing Partner
+      </h1>
+    </header>
+
+    <main class="container mx-auto flex flex-col text-center mt-5 mb-20">
+      <section class="container mx-auto ">
+        <nav class="cursor-pointer rounded-lg mx-5 mb-4  bg-white py-4">
+          <button
+            class="hover:font-bold border-2   mx-1    rounded-sm border-black px-2 bg-white text-indigo-600"
+            id="text-bold"
+          >
+            B
+          </button>
+          <button class="hover:font-bold border    rounded-sm border-black px-2 bg-white text-indigo-600 mx-1">
+            <input type="color" name="" id="color-picker" />
+          </button>
+          <button
+            class="hover:font-bold border    rounded-sm border-black px-2 bg-white text-indigo-600 mx-1 italic font-semibold"
+            id="text-italic"
+          >
+            I
+          </button>
+          <button
+            class="hover:font-bold border    rounded-sm border-black px-2 bg-white text-indigo-600 mx-1"
+            id="text-underline"
+          >
+            <i class="bi bi-type-underline"></i>
+          </button>
+          <button
+            class="hover:font-bold border    rounded-sm border-black px-2 bg-white text-indigo-600 mx-1"
+            id="text-center"
+          >
+            <i class="bi bi-text-center"></i>
+          </button>
+          <button
+            class="hover:font-bold border    rounded-sm border-black px-2 bg-white text-indigo-600 mx-1"
+            id="text-right"
+          >
+            <i class="bi bi-justify-right"></i>
+          </button>
+          <button
+            class="hover:font-bold border    rounded-sm border-black px-2 bg-white text-indigo-600 mx-1"
+            id="text-justify"
+          >
+            <i class="bi bi-justify"></i>
+          </button>
+          <select id="fontSize" class="rounded-full font-semibold">
+            <option value="8pt">Font Size</option>
+            <option value="8pt">8</option>
+            <option value="9pt">9</option>
+            <option value="10pt">10</option>
+            <option value="11pt">11</option>
+            <option value="12pt">12</option>
+            <option value="14pt">14</option>
+            <option value="16pt">16</option>
+            <option value="18pt">18</option>
+            <option value="20pt">20</option>
+            <option value="22pt">22</option>
+            <option value="24pt">24</option>
+            <option value="26pt">26</option>
+            <option value="28pt">28</option>
+            <option value="36pt">36</option>
+            <option value="48pt">48</option>
+            <option value="72pt">72</option>
+          </select>
+
+          <select id="font-selector" class="rounded-full font-semibold">
+            <option value="Arial">Arial</option>
+            <option value="Calibri">Calibri</option>
+            <option value="Comic Sans MS">Comic Sans MS</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Open Sans">Open Sans</option>
+          </select>
+          <select id="lineHeight" class="rounded-full font-semibold">
+            <option value="1">Line Hight</option>
+            <option value="1">Single</option>
+            <option value="1.5">1.5</option>
+            <option value="2">Double</option>
+            <option value="2.5">2.5</option>
+            <option value="3">Triple</option>
+          </select>
+        </nav>
+      </section>
+
+      <section class="">
+        <textarea
+          name=""
+          id="text-editor"
+          class="resize-none rounded-2xl shadow-2xl shadow-black/30 w-3/4 h-96 p-10"
+        >
+        </textarea>
+      </section>
+    </main>
+<footer>
+  <span class="block text-lg my-5 text-white sm:text-center ">©<a href="./index.html" class="hover:underline">Mahamudul Hasan Miyad™</a>. All Rights Reserved.
+  </span>
+</footer>
+    <!-- Javascript  Add Here  -->
+    <script src="./javascript/main.js"></script>
+    <script src="./javascript/utilities.js"></script>
+  </body>
+</html>
